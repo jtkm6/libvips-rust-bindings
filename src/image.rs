@@ -86,7 +86,7 @@ impl VipsImage {
         x_size: i32,
         y_size: i32,
         bands: i32,
-        offset: u64,
+        offset: u32,
     ) -> Result<VipsImage> {
         unsafe {
             let f = utils::new_c_string(filename)?;
